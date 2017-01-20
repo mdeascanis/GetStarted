@@ -1,3 +1,7 @@
+// Matthew DeAscanis
+// Getting Started
+// CIS 282-401
+
 package edu.dtcc.matt.getstarted;
 
 import android.os.Bundle;
@@ -31,18 +35,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    public void buttonOnClick (View v){
 
-    public void sayHello (View v){
+        String userName;
 
-        //String userName;
+        EditText nameInput = (EditText) findViewById(R.id.editText);
 
-        //EditText nameInput = (EditText) findViewById(R.id.editText);
-
-        //userName = nameInput.toString();
+        userName = nameInput.getText().toString();
 
         TextView message = (TextView) findViewById(R.id.textView2);
 
-        message.setText("Hello ");
+        message.setText("Hello " + userName);
 
 
 
